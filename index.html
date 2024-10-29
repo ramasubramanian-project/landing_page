@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ad Revenue Optimization</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./landingstyle.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
@@ -15,34 +15,26 @@
 
 <body>
 
-    <header class="fixed-header navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <div class="header-logo">
-                <a href="./index.html">
-                    <img src="./src/images/logo.png" alt="Logo" class="logo" height="40">
-                </a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <nav class="header-nav collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto"> <!-- ms-auto aligns the nav items to the right -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#feature2">Product</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#feature3">Pricing Plans</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#feature4">About Us</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header class="fixed-header">
+    <div class="header-logo">
+        <a href="./index.html">
+            <img src="./src/images/logo.png" alt="Logo" class="logo">
+        </a>
+    </div>
+    <nav class="header-nav">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#feature2">Product</a></li>
+            <li><a href="#feature3">Pricing Plans</a></li>
+            <li><a href="#feature4">About Us</a></li>
+        </ul>
+    </nav>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
 
 
     <main>
@@ -390,12 +382,12 @@
 
         <script>
 
-            function toggleMenu() {
-                const navbar = document.getElementById('navbarNav');
-                const bsCollapse = new bootstrap.Collapse(navbar, {
-                    toggle: true
-                });
-            }
+             //Menu Toggle
+        function toggleMenu() {
+            const nav = document.querySelector('.header-nav ul');
+            nav.classList.toggle('active');
+        }
+
         </script>
         <script>
 
