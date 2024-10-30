@@ -99,6 +99,10 @@
 }
 
 /* Mobile Responsive Styles */
+body{
+  overflow-x: hidden;
+}
+
 @media (max-width: 768px) {
   .fixed-header {
     padding: 10px 15px;
@@ -1045,7 +1049,12 @@
   }
 }
 
+@media (max-width: 768px) {
+.copyright_text{
+  text-align: center;
+}
 
+}
 
 .form-container {
   max-height: 100vh;
