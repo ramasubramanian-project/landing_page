@@ -1058,8 +1058,7 @@
 /* Default styling remains as-is */
 
 /* Media query for 13-14 inch laptops (max-width: 1400px) */
-@media (max-width: 1400px) {
-
+@media (min-width: 1024px) and (max-width: 1400px) {
 
   .reason_header h2 {
     color: #000;
