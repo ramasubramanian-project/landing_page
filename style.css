@@ -916,9 +916,7 @@ body{
   /* Reduced padding for a compact appearance */
   border-radius: 20px;
   /* Rounded corners */
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  /* Light shadow for depth */
-  background: #fff;
+ 
   /* White background for better visibility */
 }
 
@@ -1056,6 +1054,7 @@ body{
 
 }
 
+
 .form-container {
   max-height: 100vh;
   overflow-y: auto;
@@ -1063,7 +1062,9 @@ body{
 
 
 
-
+.bg-white {
+    border-radius: 15px;
+  }
 /* Default styling remains as-is */
 
 /* Media query for 13-14 inch laptops (max-width: 1400px) */
