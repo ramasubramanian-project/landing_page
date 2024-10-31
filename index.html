@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ad Revenue Optimization</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./landingstyle.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
     <header class="fixed-header navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <div class="header-logo">
@@ -22,27 +21,32 @@
                     <img src="./src/images/logo.png" alt="Logo" class="logo" height="40">
                 </a>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu()">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <nav class="header-nav collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto"> 
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav header-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Home</a>
+                        <a class="nav-link" href="#features"> Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#feature2">Product</a>
+                        <a class="nav-link" href="#about">Product</a>
+                    </li>
+                    
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Pricing Plans</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#feature3">Pricing Plans</a>
+                        <a class="nav-link" href="#contact">About us</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#feature4">About Us</a>
-                    </li>
+                    
                 </ul>
-            </nav>
+            </div>
         </div>
     </header>
+    
 
 
     <main>
@@ -189,7 +193,8 @@
                         <p class="feature_description">Boost your revenue with RTBDemand’s diverse ad solutions. Leverage our exclusive ad formats and advanced targeting options to unlock the full potential of your ad inventory and drive higher earnings</p>
                     </div>
                     <div class="feature_image">
-                        <img src="./src/images/viral-marketing.png" width="211px" height="211px">
+                        <img src="./src/images/adsense.png" width="211px" height="211px">
+
                     </div>
                 </div>
 
@@ -199,7 +204,8 @@
                         <p class="feature_description">Increase competition for your inventory with premium ad networks, including Prebid CPM networks, and tap into demand from leading partners like Google, Amazon, Xandr, SmileWanted, and more</p>
                     </div>
                     <div class="feature_image">
-                        <img src="./src/images/speed-radar.png" width="211px" height="211px">
+                        <img src="./src/images/viral-marketing.png" width="211px" height="211px">
+
                     </div>
                 </div>
 
@@ -209,7 +215,8 @@
                         <p class="feature_description">RTBDemand's optimized script sizes ensure ads have minimal impact on your website's core web vitals.</p>
                     </div>
                     <div class="feature_image">
-                        <img src="./src/images/report.png" width="211px" height="211px">
+                        <img src="./src/images/speed-radar.png" width="211px" height="211px">
+
                     </div>
                 </div>
 
@@ -220,7 +227,8 @@
                         <p class="feature_description">Discover which ad networks generate the highest revenue and the optimal times of day—all within a single dashboard</p>
                     </div>
                     <div class="feature_image">
-                        <img src="./src/images/adsense.png" width="211px" height="211px">
+                        <img src="./src/images/report.png" width="211px" height="211px">
+
                     </div>
                 </div>
 
